@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import boxes from './boxes';
+import Box from './Box';
 import './App.css';
 
 class App extends Component {
   render(){
     return(
       <div>
-        <boxes />
+        <Box />
       </div>
     )
   }
