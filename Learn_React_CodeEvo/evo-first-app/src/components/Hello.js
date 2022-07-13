@@ -1,0 +1,11 @@
+import React from "react"
+
+const Hello = () => {
+      return React.createElement(
+          'div',
+          {id: 'hello', className: 'dummyClass'},
+          React.createElement('h1', null, 'Hello Surya')
+      )
+}
+
+export default Hello
