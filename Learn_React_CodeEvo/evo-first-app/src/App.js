@@ -19,10 +19,17 @@ import LifeCycle from './components/LifeCycleA';
 import { Fragment } from 'react';
 import FragmentDemo from './components/FragmentDemo';
 import Tables from './components/Tables';
+// import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
 
 function App() {
   return (
     <div className="App">
+    <FocusInput />
+    <RefsDemo />
+    <ParentComp />
     <Tables />
     <FragmentDemo />
     <LifeCycle />
