@@ -23,10 +23,30 @@ import Tables from './components/Tables';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
+import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+
+
+ 
 
 function App() {
   return (
     <div className="App">
+    <HoverCounter />
+    <ClickCounter />
+    <ErrorBoundary>
+    <Hero heroName={"Batman"}/>
+    </ErrorBoundary>
+    <ErrorBoundary>
+    <Hero heroName={"Superman"} />
+    </ErrorBoundary>
+    <ErrorBoundary>
+    <Hero heroName={"Joker"} />
+    </ErrorBoundary>
+    <PortalDemo />
     <FocusInput />
     <RefsDemo />
     <ParentComp />
